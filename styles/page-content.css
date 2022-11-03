@@ -1,0 +1,282 @@
+/*
+Author: Maggie Chen
+Date: August 19, 2022
+*/
+
+body {
+  background-color: rgb(123, 116, 111);
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a{
+  color: black;
+}
+
+
+.homepage{
+  margin-top: 60px;
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  width: 80%;
+  min-width:60em;
+  max-width: 85em;
+}
+
+.newspaper{
+  background: rgb(235, 234, 234);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: lightgray solid 1px;
+  padding: 4em;
+  box-shadow: 9px 12px 7px #4b4949;
+  margin-bottom: 100px;
+}
+
+.newspaper-title{
+  display: flex;
+  justify-content: center;
+}
+
+
+.fulcrum-title{
+  font-family: UnifrakturMaguntia;
+  font-size: 7.5em;
+  color: black;
+  text-decoration: none;
+}
+
+.issue-information{
+  padding: 5px;
+  border-top: solid black 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.newspaper-layout{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 3em;
+  color: rgb(162, 8, 8);
+  text-align: center;
+  font-family: 'Rozha One', serif;
+}
+
+h2{
+  font-size: 2em;
+  color: rgb(162, 8, 8);
+  text-align: center;
+  font-family: 'Rozha One', serif;
+}
+
+h3{
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+}
+
+h4{
+  font-family: 'Courgette', cursive;
+  font-size: 1.75em;
+  text-align: center;
+  color: rgb(162, 8, 8)
+}
+
+.main-title{
+  border: solid rgb(170, 170, 170) 2px;
+}
+
+
+.secondary-title{
+  border: solid rgb(170, 170, 170) 2px;
+}
+
+.page-content{
+  display: flex;
+  border-left: solid rgb(170, 170, 170) 2px;
+  border-right: solid rgb(170, 170, 170) 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-column{
+  display:flex;
+  flex-direction: column;
+  display: flex;
+  border-left: solid rgb(170, 170, 170) 2px;
+  border-right: solid rgb(170, 170, 170) 2px;
+  width: 40%;
+  align-items: flex-start;
+}
+
+.side-column{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: flex-start;
+}
+
+.left-column{
+  display:flex;
+  flex-direction: column;
+  display: flex;
+  border-right: solid rgb(170, 170, 170) 2px;
+  width: 60%;
+  align-items: flex-start;
+}
+
+.right-column{
+  display:flex;
+  flex-direction: column;
+  display: flex;
+  width: 40%;
+  align-items: flex-start;
+}
+
+.article, .intro-section{
+  border-bottom: solid 2px gray;
+}
+
+.article-title, .intro-title{
+  font-family: 'Libre Bodoni', serif;
+  font-size: 1.75em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.article:hover > .image, .bottom-article:hover >.image{
+  opacity:70%
+}
+
+.article:hover > .article-title, .article:hover > .article-text,.bottom-article:hover > .article-title, .bottom-article:hover > .article-text {
+  color: darkred;
+}
+
+.article-text, .intro-text{
+  font-size: 18px;
+  line-height: 1.30;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.article-image, .bordered-article-image{
+  width: 90%;
+  text-align: center;
+  display:block;
+  margin:auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.bordered-article-image{
+  border: solid gray 2px;
+}
+
+.bottom-article, .bottom-intro-section, .article, .intro-section{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ad-image{
+  width: 250px;
+  height: 250px;
+}
+
+.second-column{
+  border-left: solid rgb(170, 170, 170) 2px;
+  border-right: solid rgb(170, 170, 170) 2px;
+}
+
+.first-column, .second-column, .third-column{
+  width: 33%;
+}
+
+.ad{
+  width: 90%;
+}
+
+.ad:hover{
+  opacity: 70%;
+}
+
+.tips-and-tricks{
+  border: dotted 3px rgb(162, 8, 8);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.pedro-title{
+  position: relative;
+}
+
+
+.pedro{
+  width: 35%;
+  max-width: 5em;;
+  position: absolute;
+  bottom: -3em;
+  left: 10px;
+}
+
+ol{
+  color: rgb(162, 8, 8);
+}
+
+li{
+  padding-bottom: 10px;
+}
+
+.last-category{
+  border-bottom: solid rgb(170, 170, 170) 2px;
+}
+
+.socials{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.socials-link{
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.logo{
+  width: 50px;
+}
+
+.socials-row:hover > .socials-icon{
+  opacity:70%
+}
+
+.socials-row:hover > .socials-link {
+  color: gray;
+}
+
+.socials-row{
+  display: flex;
+  align-items: center;
+}

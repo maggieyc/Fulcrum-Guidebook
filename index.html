@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<!-- 
+Author: Maggie Chen
+Date: August 19, 2022
+-->
+
+<html>
+  <head>
+    <title>News, Clues and Reviews</title>
+    <link rel="stylesheet" href="styles/page-content.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/calendar.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet"> 
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    
+    <script src="javascript/scripts.js"></script>
+
+  </head>
+
+  <body>
+    <div class="header">
+
+      <a href="https://thefulcrum.ca/" target="_blank">
+        <img class="fulcrum-logo" src="images/fulcrum-logo.webp">
+      </a>
+
+      <button onclick="scrollToElement('A2')" class="menu-option">CALENDAR</button>
+
+      <button onclick="scrollToElement('A3')" class="menu-option">SUMMER NEWS</button>
+
+      <button onclick="scrollToElement('A4')" class="menu-option">RESOURCES</button>
+
+      <button onclick="scrollToElement('A5')" class="menu-option">COMMUNITY</button>
+      
+      <div class="top-button">
+        <button onclick="topFunction()" id="topBtn" class="menu-option">Back to Top</button>
+      </div>
+    </div>
+
+
+    <div class="homepage">
+    
+
+      <div class="newspaper">
+        <div id="A1" class="newspaper-title">
+          <a href="https://thefulcrum.ca/" target="_blank" class="fulcrum-title">
+            The Fulcrum.
+          </a>
+        </div>
+    
+        <div class="issue-information">
+          <div class="year">
+              <p>VOL.83 N0.1</p>
+          </div>
+          <div class="quote">
+              <p>VERITAS SINE TIMORE</p>
+          </div>
+          
+          <div class="date">
+              <p>FALL 2022</p>
+          </div>
+        </div>
+    
+    
+        <div class="newspaper-layout">
+    
+          <div class="main-title">
+            <h1>NEWS, CLUES AND REVIEWS</h1>
+          </div>
+
+          <div class="page-content">
+            <div class="left-column">
+              <div class="bottom-intro-section">
+                <p class="intro-title">
+                  Introduction to the Fulcrum
+                </p>
+
+                <p class="intro-text">
+                  The Fulcrum is the University of Ottawa’s independent English-language student news outlet. Founded in 1942, we’ve been keeping students (like you) informed about current events that directly affect the U of O community for 80 years. 
+                  <a target="_blank" href="https://thefulcrum.ca/features/featuring-the-best-looking-back-at-80-years-of-fulcrum-features/">(Click here to read more!)</a>
+                </p>
+                <br>
+                <p class="intro-text">
+                  <i>Our Mission:</i>
+                  By holding those in positions of power accountable, the Fulcrum promotes the wellbeing of the University of Ottawa community through accessible and independent information from on and off-campus. 
+                </p>
+                </p>
+                <br>
+                <p class="intro-text">
+                  <i>Our Vision:</i>
+                  A University of Ottawa where every community member has the Fulcrum in the palm of their hand.
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="right-column">
+              
+              <div class="intro-section">
+                <p class="intro-title">
+                  Land Acknowledgement
+                </p>
+  
+                <p class="intro-text">
+                  The Fulcrum acknowledges and respects that it stands on unceded Algonquin territory. 
+                </p>
+              </div>
+
+              <div class="bottom-intro-section">
+                <p class="intro-title">
+                  Volunteer With Us
+                </p>
+
+                <p class="intro-text">
+                  The Fulcrum welcomes volunteers for both writing and multimedia in every section.
+                  Twice a year, we give new volunteers (contributors) the
+                  opportunity to become paid freelancers.
+                  Learn more on our website or by sending us an email at editor@thefulcrum.ca
+                </p>
+              </div>
+            </div>
+
+          </div>
+    
+          <div class="secondary-title">
+            <h2 id="A2">SEPTEMBER EVENTS</h2>
+          </div>
+
+          <div class="page-content calender-container">
+            <div class="calendar">
+              <div class="month">
+                <p>SEPTEMBER 2022</p>
+              </div>
+
+              <div class="column-headers">
+                  <div class="day-of-week">sun</div>
+                  <div class="day-of-week">mon</div>
+                  <div class="day-of-week">tue</div>
+                  <div class="day-of-week">wed</div>
+                  <div class="day-of-week">thu</div>
+                  <div class="day-of-week">fri</div>
+                  <div class="day-of-week">sat</div>
+              </div>
+
+              <div class="days-of-month">
+                <div class="week">
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day"></div>
+                  <div class="day">
+                    <div class="calendar-number">1</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">2</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">3</div>
+                    <div class="calendar-text">
+                      <div class="event">101-Week Kit Sales</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="week">
+                  <div class="day">
+                    <div class="calendar-number">4</div>
+                    <div class="calendar-text">
+                      <div class="event">101-Week Kit Sales</div>
+                      <div class="event">101-Week Starts</div>
+                    </div>
+
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">5</div>
+                    <div class="calendar-text">
+                      <div class="event">Take Back the Night</div>
+                      <div class="event">Philathnropic Clubs Fair</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">6</div>
+                    <div class="calendar-text">
+                      <div class="event">Shinerama Clubs Fair</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">7</div>
+                    <div class="calendar-text">
+                      <div class="event">uOShow Clubs Fair</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">8</div>
+                    <div class="calendar-text">
+                      <div class="event">Services Fair</div>
+                      <div class="event">CityFolk Weekend 1 Starts</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">9</div>
+                    <div class="calendar-text">
+                      <div class="event">Women's Soccer v. Queens</div>
+                      <div class="event">101-Fest</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">10</div>
+                  </div>
+                </div>
+
+                <div class="week">
+                  <div class="day">
+                    <div class="calendar-number">11</div>
+                    <div class="calendar-text">
+                      <div class="event">Women's Soccer v. Toronto</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">12</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">13</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">14</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">15</div>
+                    <div class="calendar-text">
+                      <div class="event">CityFolk Weekend 2 Starts</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">16</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">17</div>
+                    <div class="calendar-text">
+                      <div class="event">Football v. Guelph</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="week">
+                  <div class="day">
+                    <div class="calendar-number">18</div>
+                    <div class="calendar-text">
+                      <div class="event">Women's Soccer v. Nipissing</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">19</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">20</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">21</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">22</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">23</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">24</div>
+                    <div class="calendar-text">
+                      <div class="event">Women's Rugby Men's Rugbhy v. Bishop's</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="week">
+                  <div class="day">
+                    <div class="calendar-number">25</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">26</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">27</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">28</div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">29</div>
+                    <div class="calendar-text">
+                      <div class="event">Women's Soccer Carleton</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">30</div>
+                    <div class="calendar-text">
+                      <div class="event">Women's Rugby Men's Rugby v. Carleton</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="calendar-number">1</div>
+                    <div class="calendar-text">
+                      <div class="event">Block Party & Panda Game</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="secondary-title">
+            <h2 id="A3">U of O SUMMER NEWS</h2>
+          </div>
+
+          <div class="page-content">
+            
+            <div class="side-column">
+
+              <div class="article">
+
+                <a class="image" target="_blank" href="https://thefulcrum.ca/news/first-nations-activist-claudette-commanda-to-be-the-university-of-ottawas-first-ever-indigenous-chancellor/">
+                  <img class="article-image" src="images/jack-johnson.webp">
+                </a>
+
+                <a class="article-title" target="_blank" href="https://thefulcrum.ca/arts/bluesfest-is-already-the-most-wholesome-event-of-the-summer/">
+                  Bluesfest is already the most wholesome event of the summer
+                </a>
+
+                <a class="article-text" target="_blank" href="https://thefulcrum.ca/arts/bluesfest-is-already-the-most-wholesome-event-of-the-summer/">
+                  <h3>
+                    JACK JOHNSON ACTUALLY HAD ME UPSIDE DOWN
+                  </h3>
+                  I’m sure day one of Bluesfest was phenomenal, but trust me when I say I was blown away by day two’s festivities. Unfortunately, I didn’t know any of the performers besides the wholesome headliner, Jack Johnson.
+                </a>
+              </div>
+
+              <div class="article">
+                <img class="bordered-article-image" src="images/fulcrum graphic.jpg">
+              </div>
+
+              <div class="bottom-article">
+                <a class="article-title" target="_blank" href="https://thefulcrum.ca/news/university-opens-new-student-health-and-wellness-centre-as-campus-same-day-clinic-closes/">
+                  University opens new Student Health and Wellness Centre as Campus Same Day Clinic closes
+                </a>
+
+                <a class="article-text" target="_blank" href="https://thefulcrum.ca/news/university-opens-new-student-health-and-wellness-centre-as-campus-same-day-clinic-closes/">
+                  <h3>NEW CENTRE IS LOCATED IN ROOM N203 OF THE MINTO SPORTS COMPLEX</h3>
+                  On May 1, the University of Ottawa’s new Student Health and Wellness Centre officially opened its doors, replacing the Byward Family Health Team’s Campus Same Day Clinic...
+                </a>
+              </div>
+            </div>
+
+            <div class="main-column">
+              <div class="article">
+                <a class="image" target="_blank" href="https://thefulcrum.ca/news/first-nations-activist-claudette-commanda-to-be-the-university-of-ottawas-first-ever-indigenous-chancellor/">
+                  <img class="article-image" src="images/claudette-commanda.webp">
+                </a>
+                
+                <a class="article-title" target="_blank" href="https://thefulcrum.ca/news/first-nations-activist-claudette-commanda-to-be-the-university-of-ottawas-first-ever-indigenous-chancellor/">
+                    First Nations activist Claudette Commanda to be the University of Ottawa’s first ever Indigenous chancellor
+                </a>
+                
+                <a class="article-text" target="_blank" href="https://thefulcrum.ca/news/first-nations-activist-claudette-commanda-to-be-the-university-of-ottawas-first-ever-indigenous-chancellor/">
+                  <h3>
+                    COMMANDA WILL STEP INTO THE ROLE ON NOV. 9
+                  </h3>
+                  Claudette Commanda, an Algonquin Anishinabe from Kitigan Zibi Anishinabeg First Nation in Quebec, has been appointed chancellor of the University of Ottawa. She will succeed Calin Rovinescu following the end of his second mandate later this fall. Commanda is the first Indigenous person to be appointed in the university’s history.
+                </a>
+              </div>
+
+              <div class="bottom-article">
+                <a class="article-title" target="_blank" href="https://thefulcrum.ca/news/uottawa/uosu-stop-tuition-hike-protest-fails-to-halt-tuition-increase/">
+                  UOSU ‘Stop Tuition Hike’ protest fails to halt tuition increase
+                </a>
+
+                <a class="image" target="_blank" href="https://thefulcrum.ca/news/uottawa/uosu-stop-tuition-hike-protest-fails-to-halt-tuition-increase/">
+                  <img class="article-image" src="images/tuition-hike.webp">
+                </a>
+
+                <a class="article-text" target="_blank" href="https://thefulcrum.ca/news/uottawa/uosu-stop-tuition-hike-protest-fails-to-halt-tuition-increase/">
+                  <h3>
+                    OUT-OF-PROVINCE STUDENTS WILL SEE AN INCREASE OF FIVE PER CENT, WHILE INTERNATIONAL STUDENTS‘ TUITION INCREASE VARIES BETWEEN 5.5 AND SEVEN PER CENT, DEPENDING ON COMPLETED COURSE UNITS
+                  </h3>
+                  On Monday, May 30, University of Ottawa students, community members, and media trickled down the steps of Jock-Turcot University Centre to take part in a protest organized by the University of Ottawa Students’ Association (UOSU) to contest rising tuition fees for out-of-province and international students...
+                </a>
+              </div>
+
+            </div>
+
+            <div class="side-column">
+
+              <div class="article">
+
+                <a class="article-title" target="_blank" href="https://thefulcrum.ca/news/gee-gees-track-and-field-team-has-their-varsity-status-ripped-away/">
+                  Gee-Gees track and field team has their varsity status ripped away
+                </a>
+                <a class="image" target="_blank" href="https://thefulcrum.ca/news/gee-gees-track-and-field-team-has-their-varsity-status-ripped-away/">
+                  <img class="article-image" src="images/track-and-field.webp">
+                </a>
+
+                <a class="article-text" target="_blank" href="https://thefulcrum.ca/news/gee-gees-track-and-field-team-has-their-varsity-status-ripped-away/">
+                  <h3>
+                    VARSITY ATHLETICS INFORMED THE TRACK AND FIELD TEAM OF THEIR DECISION ON JULY 7
+                  </h3>
+                  On July 7, the University of Ottawa’s Varsity Athletics revoked the Gee-Gees track and field team’s varsity status...
+                </a>
+              </div>
+
+              <div class="bottom-article">
+                <div class="tips-and-tricks">
+                  <div class="pedro-title">
+                    <h4>Pedro's Tips and Tricks</h4>
+                     <img class="pedro" src="images/pedro panda.png">
+                  </div>
+
+                  <div class="article-text">
+                    <ol>
+                      <li>Students get 10% off at Loblaws on Tuesdays and
+                        Thursdays. You‘ll find a lot of places around Ottawa offer
+                        student discounts — just remember there‘s no harm in
+                        asking.
+                      </li>
+                      <li>
+                        Join a club or team. Between over 360 clubs and 32
+                        sports teams, the U of O has something for everyone.
+                      </li>
+                      <li>
+                        Memorize the tunnel system — you‘ll want it for the
+                        winter.
+                      </li>
+                      <li>
+                        Join Facebook groups like uOttawa Textbook exchange 
+                        & Buy Nothing Sandy Hill to save some some extra mo-ney — you never know what might pop up.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+    
+          </div>
+
+          <div class="secondary-title">
+            <h2 id="A4">U of O STUDENT RESOURCES</h2>
+          </div>
+    
+          <div class="page-content">
+            <div class="first-column">
+              <div class="bottom-article">
+    
+                <a class="article-title" target="_blank" href="https://gps-uottawa.ca/en">
+                  Academic Writing Help Centre
+                </a>
+  
+                <a class="article-text" target="_blank" href="https://gps-uottawa.ca/en">
+                  Click here for to find mentoring appointments, study groups, workshops, writing appointments and academic integrety sessions.
+                </a>
+
+              </div>
+            </div>
+
+
+            <div class="second-column">
+              <div class="bottom-article">
+    
+                <a class="article-title" target="_ blank" href="https://www2.uottawa.ca/campus-life/health-wellness/student-health-wellness-centre">
+                  Student Health and Wellness Centre
+                </a>
+                
+                <a class="article-text" target="_ blank" href="https://www2.uottawa.ca/campus-life/health-wellness/student-health-wellness-centre">
+                  Looking for support? The Student Health and Wellness Centre is where you can find immediate support, counselling, wellness activites and more.
+                </a>
+              </div>
+            </div>
+    
+            <div class="third-column" >
+              <div class="bottom-article">
+                <a class="article-title" target="_blank" href="https://www2.uottawa.ca/about-us/indigenous/indigenous-resource-centre">
+                  Indigenous Resource Centre
+                </a>
+                <a class="article-text" target="_blank" href="https://www2.uottawa.ca/about-us/indigenous/indigenous-resource-centre">
+                  The IRC offers a programs and supports designed for First Nations, Inuit and Métis learners.
+                </a>
+              </div>
+            </div>
+  
+          </div>
+
+          <div class="secondary-title">
+            <h2 id="A5">YOUR OTTAWA COMMUNITY</h2>
+          </div>
+
+          <div class="page-content last-category">
+            <div class="left-column">
+              <div class="article">
+                <a class="image" target="_blank" href="https://thefulcrum.ca/arts/an-ode-to-ottawa/">
+                  <img class="bordered-article-image" src="images/parliament.webp">
+                </a>
+
+                <a class="article-title" target="_blank" href="https://thefulcrum.ca/arts/an-ode-to-ottawa/">
+                  An ode to Ottawa
+                </a>
+
+                <div class="article-text" target="_blank" href="https://thefulcrum.ca/arts/an-ode-to-ottawa/">
+                  <h3>
+                    ROMANTICIZE EVERYTHING, ALWAYS
+                  </h3>
+                  The beauty of Ottawa is tragically underappreciated. In fact, of all the places I’ve lived, the nation’s capital has quickly become one of my favourites. Born in Bangladesh and raised in Canada, I’ve made my way around the block — the block in question being the world. As a child, I lived in Stuttgart, Germany for four years. My parents gallivanted a young starry-eyed me through Europe all the while. As for Ontario, I’ve lived in the likes of Scarborough and Thunder Bay — two rather different cities on opposite ends of the province...
+                </div>
+              </div>
+
+              <div class="bottom-article">
+                <a class="article-title" target="_blank" href="https://thefulcrum.ca/arts/snacks-cannabis-and-good-conversations-a-look-into-new-businesses-in-sandy-hill/">
+                  Snacks, cannabis, and good conversations: A look into new businesses in Sandy Hill
+                </a>
+
+                <a class="article-text" target="_blank" href="https://thefulcrum.ca/arts/snacks-cannabis-and-good-conversations-a-look-into-new-businesses-in-sandy-hill/">
+                  <h3>THREE NEW SANDY HILL BUSINESSES THAT HAVE OPENED THEIR DOORS DESPITE THE PANDEMIC</h3>
+                  Despite the COVID-19 pandemic, restrictions, and countless lockdowns, many businesses in Sandy Hill have blossomed in the past few years. Here is a look into three new businesses in Sandy Hill, offering everything from snacks to cannabis....
+                </a>
+              </div>
+            </div>
+            <div class="right-column">
+              <div class="article">
+                <a class="article-title" target="_blank" href="https://thefulcrum.ca/sports/sports-confessional-gee-gees-father-and-sons-orders/">
+                  Sports Confessional: Gee-Gees Father and Sons orders
+                </a>
+
+                <a class="image" target="_blank" href="https://thefulcrum.ca/sports/sports-confessional-gee-gees-father-and-sons-orders/">
+                  <img class="article-image" src="images/father-and-sons.webp">
+                </a>
+
+                <a class="article-text" target="_blank" href="https://thefulcrum.ca/sports/sports-confessional-gee-gees-father-and-sons-orders/">
+                  <h3>WHAT’S YOUR FAVOURITE FATHER AND SONS ORDER?</h3>
+                  As a University of Ottawa student, I feel that there is some sort of spell put on us that makes us go to Father and Sons for literally any occasion. Tough day at work and need a brew? Father and Sons. Hungover from the night before and need a cheap, balanced breakfast? Father and Sons. Absolutely nothing happened but you want a bite or a drink (or both)? Father and Sons...
+                </a>
+              </div>
+
+              <div class="bottom-article">
+                 <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 15px;">
+                   FOLLOW US!
+                 </h2> 
+                
+                <div class="socials">
+                  <div class="socials-row">
+                    <a lass="socials-icon" target="_blank" href="https://www.instagram.com/instafulcrum/?hl=en">
+                      <img class="logo" src="images/instagram.png">
+                    </a>
+                    <a class="socials-link" target="_blank" href=https://www.instagram.com/instafulcrum/?hl=en">
+                      INSTAFULCRUM
+                    </a>
+                  </div>
+
+                  <div class="socials-row">
+                    <a class="socials-icon" target="_blank" href="https://www.facebook.com/TheFulcrumFB/">
+                      <img class="logo" src="images/facebook.png">
+                    </a>
+                    <a class="socials-link" target="_blank" href="https://www.facebook.com/TheFulcrumFB/">
+                      FULCRUM
+                    </a>
+                  </div>
+                  
+                  <div class="socials-row">
+                    <a class="socials-icon" target="_blank" href="https://twitter.com/The_Fulcrum">
+                      <img class="logo" src="images/twitter.png">
+                    </a>
+                    <a class="socials-link" target="_blank" href="https://twitter.com/The_Fulcrum">
+                      THE_FULCRUM
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+  
+      </div>
+    </div>
+
+  </body>
+
+</html>
